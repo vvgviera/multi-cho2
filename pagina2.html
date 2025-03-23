@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Múltiples Opciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluación de Múltiples Opciones</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>Pregunta 1: ¿Many coding professionals go on to find work as: Many coding professionals go on to find work as: ?</p>
+                <input type="radio" name="q1" value="correct"> Consultant<br>
+                <input type="radio" name="q1" value="incorrect"> Accountant<br>
+                <input type="radio" name="q1" value="incorrect"> Medical Assistants<br>
+				<input type="radio" name="q1" value="incorrect"> Financial Planning<br>
+            </div>
+            <div class="question">
+                <p>Pregunta 2: Which type of information is NOT maintained in a medical record? </p>
+                <input type="radio" name="q2" value="incorrect"> Treatment outcomes <br>
+                <input type="radio" name="q2" value="incorrect"> Observations <br>
+				<input type="radio" name="q2" value="correct"> Financial records <br>
+                <input type="radio" name="q2" value="incorrect"> Medical or surgical interventions <br>
+				
+            </div>
+			<div class="question">
+                <p>Pregunta 3: Professionals who specialize in coding are called: </p>
+                
+                <input type="radio" name="q3" value="incorrect"> Information technologists<br>
+				<input type="radio" name="q3" value="correct"> Coding specialists <br>
+                <input type="radio" name="q3" value="incorrect"> Medical Assistants<br>
+				<input type="radio" name="q3" value="incorrect"> Scribes<br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 4: EHR stands for: </p>
+                
+                <input type="radio" name="q4" value="incorrect"> Electronic health response<br>	
+                <input type="radio" name="q4" value="incorrect"> Extended health record<br>
+				<input type="radio" name="q4" value="incorrect"> Established health record<br>
+				<input type="radio" name="q4" value="correct"> Electronic health record <br>
+            </div>
+            <button type="button" onclick="evaluateQuiz()">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

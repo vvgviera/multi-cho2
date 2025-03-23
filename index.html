@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codificación Medica - Test</title>
+  <!--<link rel="stylesheet" href="style.css">-->
+	
+	
+<style>
+body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #575757;
+}
+
+.contenido {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+</style>
+	
+</head>
+<body>
+  <aside class="sidebar">
+    <ul>
+      <li onclick="cambiarContenido('pagina1.html')">The Business of Medicine</li>
+      <li onclick="cambiarContenido('pagina2.html')">Anatomy</li>
+      <li onclick="cambiarContenido('pagina3.html')">MedTerm</li>
+	  <li onclick="cambiarContenido('pagina4.html')">Introduction to ICD-10-CM</li>
+      <li onclick="cambiarContenido('pagina5.html')">ICD-10-CM Chapters 1-11</li>
+</ul>
+  </aside>
+
+  <main class="contenido">
+    <div id="contenido">
+      <!-- Aquí se cargará el contenido de las opciones -->
+      <p>Selecciona una opción del menú para ver el contenido.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
