@@ -6,6 +6,7 @@ function cambiarContenido(pagina) {
 
 
 
+// JavaScript
 function evaluateQuiz() {
     const form = document.getElementById('quizForm');
     const questions = form.querySelectorAll('.question');
@@ -20,14 +21,31 @@ function evaluateQuiz() {
 
     const totalQuestions = questions.length;
     const scorePercentage = (correctAnswers / totalQuestions) * 100;
-    const resultDiv = document.getElementById('result');
+    const modalContent = document.getElementById('modalContent');
+    const resultModal = document.getElementById('resultModal');
+    const overlay = document.getElementById('overlay');
 
     if (scorePercentage >= 70) {
-        resultDiv.innerHTML = `<p>Aprobado - ${scorePercentage.toFixed(2)}%</p>`;
+        modalContent.innerHTML = `<p>Aprobado - ${scorePercentage.toFixed(2)}%</p>`;
     } else {
-        resultDiv.innerHTML = `<p>Desaprobado - ${scorePercentage.toFixed(2)}%</p>`;
+        modalContent.innerHTML = `<p>Desaprobado - ${scorePercentage.toFixed(2)}%</p>`;
     }
+
+    resultModal.style.display = 'block';
+    overlay.style.display = 'block';
 }
+
+function closeModal() {
+    const resultModal = document.getElementById('resultModal');
+    const overlay = document.getElementById('overlay');
+
+    resultModal.style.display = 'none';
+    overlay.style.display = 'none';
+
+    // Devolver el foco al formulario del cuestionario
+    document.getElementById('quizForm').focus();
+}
+
 
 
 
