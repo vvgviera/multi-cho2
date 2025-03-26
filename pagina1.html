@@ -348,6 +348,14 @@
 			
             <button type="button" onclick="evaluateQuiz()">Evaluar</button>
         </form>
+
+	    <!-- Modal -->
+<div id="resultModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border: 1px solid #ccc; padding: 20px; z-index: 1000;">
+    <p id="modalContent"></p>
+    <button onclick="closeModal()">Aceptar</button>
+</div>
+
+<div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
