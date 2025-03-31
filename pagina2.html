@@ -3,47 +3,498 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación de Múltiples Opciones</title>
+    <title> Anatomy Review </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Evaluación de Múltiples Opciones</h1>
+        <h1> Anatomy Review </h1>
         <form id="quizForm">
             <div class="question">
-                <p>Pregunta 1: ¿Many coding professionals go on to find work as: Many coding professionals go on to find work as: ?</p>
-                <input type="radio" name="q1" value="correct"> Consultant<br>
-                <input type="radio" name="q1" value="incorrect"> Accountant<br>
-                <input type="radio" name="q1" value="incorrect"> Medical Assistants<br>
-				<input type="radio" name="q1" value="incorrect"> Financial Planning<br>
+                <p>Pregunta 1: ¿Which is NOT a function of the skin? </p>
+                <input type="radio" name="q1" value="correct"> a. Acts as a gland by synthesizing vitamin A. <br>
+                <input type="radio" name="q1" value="incorrect">b. Excretes water, salt, and small amounts of waste.<br>
+                <input type="radio" name="q1" value="incorrect">c.  Houses sensory receptors for touch, pressure, pain, and temperature <br>
+				<input type="radio" name="q1" value="incorrect">d.  Plays an important role in regulation of body temperature. <br>
             </div>
             <div class="question">
-                <p>Pregunta 2: Which type of information is NOT maintained in a medical record? </p>
-                <input type="radio" name="q2" value="incorrect"> Treatment outcomes <br>
-                <input type="radio" name="q2" value="incorrect"> Observations <br>
-				<input type="radio" name="q2" value="correct"> Financial records <br>
-                <input type="radio" name="q2" value="incorrect"> Medical or surgical interventions <br>
+                <p>Pregunta 2: Which layer is NOT considered part of the skin?  </p>
+                <input type="radio" name="q2" value="incorrect">a. Stratum corneum <br>
+                <input type="radio" name="q2" value="incorrect">b. Stratum germinativum  <br>
+				<input type="radio" name="q2" value="incorrect">c. Epidermis  <br>
+                <input type="radio" name="q2" value="correct">d. Hypodermis   <br>
 				
             </div>
 			<div class="question">
-                <p>Pregunta 3: Professionals who specialize in coding are called: </p>
+                <p>Pregunta 3: Which one of the following is TRUE of the stratum germinativum?  </p>
                 
-                <input type="radio" name="q3" value="incorrect"> Information technologists<br>
-				<input type="radio" name="q3" value="correct"> Coding specialists <br>
-                <input type="radio" name="q3" value="incorrect"> Medical Assistants<br>
-				<input type="radio" name="q3" value="incorrect"> Scribes<br>
+                <input type="radio" name="q3" value="incorrect">a. It is composed of about 30 layers of dead, flattened, keratinized cells. <br>
+				<input type="radio" name="q3" value="incorrect">b. It is composed of dense fibrous connective tissue.  <br>
+                <input type="radio" name="q3" value="correct">c. It lies on top of the dermis and has access to a rich supply of blood.<br>
+				<input type="radio" name="q3" value="incorrect">d. It is the surface layer of the epidermis. <br>
             </div>
 			
 			<div class="question">
-                <p>Pregunta 4: EHR stands for: </p>
+                <p>Pregunta 4: Which one of the following best describes psoriasis?  </p>
                 
-                <input type="radio" name="q4" value="incorrect"> Electronic health response<br>	
-                <input type="radio" name="q4" value="incorrect"> Extended health record<br>
-				<input type="radio" name="q4" value="incorrect"> Established health record<br>
-				<input type="radio" name="q4" value="correct"> Electronic health record <br>
+                <input type="radio" name="q4" value="incorrect">a. An inflammatory condition characterized by redness pustular and vesicular lesions, crusts, and scales. <br>	
+                <input type="radio" name="q4" value="incorrect">b. A contagious infection of skin generally caused by staphylococcus bacterium. <br>
+				<input type="radio" name="q4" value="correct">c. A chronic condition characterized by red, dry, elevated lesions, covered by silvery scales. <br>
+				<input type="radio" name="q4" value="incorrect">d.  An allergic reaction characterized by wheals and generally accompanied by pruritus.  <br>
             </div>
-            <button type="button" onclick="evaluateQuiz()">Enviar</button>
+			
+			<div class="question">
+                <p>Pregunta 5: Muscle is attached to bone by what method?   </p>
+                
+                <input type="radio" name="q5" value="incorrect">a. Tendons, ligaments, and directly to bone <br>	
+                <input type="radio" name="q5" value="incorrect">b. Tendons and cartilage  <br>
+				<input type="radio" name="q5" value="correct">c. Tendons, aponeurosis and directly to bone  <br>
+				<input type="radio" name="q5" value="incorrect">d.  Ligaments, aponeurosis, and directly to bone   <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 6: What is affected by myasthenia gravis?   </p>
+                
+                <input type="radio" name="q6" value="correct">a. Neuromuscular junction  <br>	
+                <input type="radio" name="q6" value="incorrect">b. Muscle belly   <br>
+				<input type="radio" name="q6" value="incorrect">c. Muscle/bone connection <br>
+				<input type="radio" name="q6" value="incorrect">d. Bone  <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 7: Which bone(s) have trochanters?   </p>
+                
+                <input type="radio" name="q7" value="incorrect">a. Humerus   <br>	
+                <input type="radio" name="q7" value="incorrect">b. Tibia   <br>
+				<input type="radio" name="q7" value="correct">c. Femur <br>
+				<input type="radio" name="q7" value="incorrect">d. Both A and C   <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 8: What is the great toe called?    </p>
+                
+                <input type="radio" name="q8" value="incorrect">a. Talus   <br>	
+                <input type="radio" name="q8" value="correct">b. Hallux   <br>
+				<input type="radio" name="q8" value="incorrect">c. Calcaneus <br>
+				<input type="radio" name="q8" value="incorrect">d. Metatarsal    <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 9: What is a function of the alveoli in the lungs?     </p>
+                
+                <input type="radio" name="q9" value="correct">a. Oxygen exchange    <br>	
+                <input type="radio" name="q9" value="incorrect">b. Fluid in the lungs absorbed <br>
+				<input type="radio" name="q9" value="incorrect">c. Nicotine is destroyed  <br>
+				<input type="radio" name="q9" value="incorrect">d. Providing an airway to breathe    <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 10: Through which vessel is oxygenated blood returned to the heart from the lungs?     </p>
+                
+                <input type="radio" name="q10" value="incorrect">a. Bronchial artery     <br>	
+                <input type="radio" name="q10" value="incorrect">b. Bronchial vein  <br>
+				<input type="radio" name="q10" value="incorrect">c. Pulmonary artery  <br>
+				<input type="radio" name="q10" value="correct">d. Pulmonary vein    <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 11: Which respiratory structure is comprised of cartilage and ligaments?    </p>
+                
+                <input type="radio" name="q11" value="incorrect">a. Alveoli     <br>	
+                <input type="radio" name="q11" value="incorrect">b. Lung  <br>
+				<input type="radio" name="q11" value="incorrect">c. Bronchiole   <br>
+				<input type="radio" name="q11" value="correct">d. Trachea    <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 12: How many lobes make up the right lung?    </p>
+                
+                <input type="radio" name="q12" value="incorrect">a. one      <br>	
+                <input type="radio" name="q12" value="incorrect">b. two   <br>
+				<input type="radio" name="q12" value="correct">c. three    <br>
+				<input type="radio" name="q12" value="incorrect">d. four     <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 13: What is a myocardial infarction?     </p>
+                
+                <input type="radio" name="q13" value="incorrect">a. Overgrowth of muscle tissue, affecting the heart’s ability to pump      <br>	
+                <input type="radio" name="q13" value="incorrect">b. Abnormal heart beats causing pain, nausea and discomfort    <br>
+				<input type="radio" name="q13" value="correct">c. Lack of oxygen to the heart tissue, resulting in tissue death    <br>
+				<input type="radio" name="q13" value="incorrect">d. Malfunction in one of the valves in the heart, disrupting blood flow     <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 14: Which one of the following does NOT circulate fluids throughout the body?      </p>
+                
+                <input type="radio" name="q14" value="correct">a. Endocrine system       <br>	
+                <input type="radio" name="q14" value="incorrect">b. Venous system    <br>
+				<input type="radio" name="q14" value="incorrect">c. Arterial system   <br>
+				<input type="radio" name="q14" value="incorrect">d. Lymphatic system   <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 15: Which one of the following is significant of an abdominal aortic aneurysm?      </p>
+                
+                <input type="radio" name="q15" value="incorrect">a. It is indicative of an underlying heart disorder needing treatment       <br>	
+                <input type="radio" name="q15" value="incorrect">b. Pooling blood in an aneurysm can cause clots    <br>
+				<input type="radio" name="q15" value="correct">c. It is a weakness in a large artery and rupture can be deadly    <br>
+				<input type="radio" name="q15" value="incorrect">d. The aorta feeds many important organs in the abdomen    <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 16: Which chamber of the heart is considered the one working the hardest?     </p>
+                
+                <input type="radio" name="q16" value="incorrect">a. Right atrium       <br>	
+                <input type="radio" name="q16" value="incorrect">b. Right ventricle    <br>
+				<input type="radio" name="q16" value="incorrect">c. Left atrium    <br>
+				<input type="radio" name="q16" value="correct">d. Left ventricle   <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 17: Which best describes constituent components of the human lymphatic system?    </p>
+                
+                <input type="radio" name="q17" value="correct">a. Lymph nodes, lymphatic vessels, spleen, thoracic duct        <br>	
+                <input type="radio" name="q17" value="incorrect">b. Lymph nodes, lymphatic vessels, tonsils, liver     <br>
+				<input type="radio" name="q17" value="incorrect">c. Lymph nodes, lymphatic vessels, bone marrow, kidneys     <br>
+				<input type="radio" name="q17" value="incorrect">d. Lymph nodes, lymphatic vessels, thymus gland, pancreas   <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 18: The term hemic specifically refers to what bodily fluid?    </p>
+                
+                <input type="radio" name="q18" value="incorrect">a. Bile interstitial fluid  <br>
+                <input type="radio" name="q18" value="incorrect">b. Lymph      <br>
+				<input type="radio" name="q18" value="correct">c. Blood     <br>
+				<input type="radio" name="q18" value="incorrect">d. Interstitial fluid <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 19: What distinguishes a sentinel node from other lymph nodes?    </p>
+                
+                <input type="radio" name="q19" value="incorrect">a. A sentinel node is swollen or diseased <br>
+                <input type="radio" name="q19" value="correct">b. A sentinel node is the first lymph node in a group of nodes to be reached by metastasizing cancer cells       <br>
+				<input type="radio" name="q19" value="incorrect">c. A sentinel node stores white blood cells     <br>
+				<input type="radio" name="q19" value="incorrect">d. A sentinel node contains both afferent and efferent lymph vessels <br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 20: The mediastinum contains all of the following except:     </p>
+                
+                <input type="radio" name="q20" value="incorrect">a. Heart  <br>
+                <input type="radio" name="q20" value="incorrect">b. Trachea       <br>
+				<input type="radio" name="q20" value="correct">c. Lungs     <br>
+				<input type="radio" name="q20" value="incorrect">d. Thymus<br>
+            </div>
+			
+			<div class="question">
+                <p>Pregunta 21: The term pneumomediastinum describes what condition?      </p>
+                
+                <input type="radio" name="q21" value="incorrect">a. Inflammation of the mediastinum   <br>
+                <input type="radio" name="q21" value="incorrect">b. Puncture of the alveoli of the lungs        <br>
+				<input type="radio" name="q21" value="incorrect">c. Presence of a cyst or tumor in the mediastinum     <br>
+				<input type="radio" name="q21" value="correct">d. The presence of air in the mediastinum<br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 22: Which one of the following is NOT true of the thoracic diaphragm?       </p>
+                
+                <input type="radio" name="q22" value="correct">a. It is a frequent site of a Spigelian (lateral ventral) hernia    <br>
+                <input type="radio" name="q22" value="incorrect">b. It separates the thoracic and abdominal cavities  <br>
+				<input type="radio" name="q22" value="incorrect">c. It contracts during inhalation, thus enlarging the thoracic cavity to aid breathing   <br>
+				<input type="radio" name="q22" value="incorrect">d. It contains apertures to allow passage of the esophagus, aorta, and vena cava <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 23: Upon leaving the stomach, nutrients move through the small intestine in what order?        </p>
+                
+                <input type="radio" name="q23" value="correct">a. Duodenum, jejunum, ileum.   <br>
+                <input type="radio" name="q23" value="incorrect">b. Duodenum, ileum, jejunum <br>
+				<input type="radio" name="q23" value="incorrect">c. Jejunum, ileum, duodenum <br>
+				<input type="radio" name="q23" value="incorrect">d. Jejunum, duodenum, ileum<br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 24: Upon leaving the last portion of the small intestine, nutrients move through the large intestine in what order?        </p>
+                
+                <input type="radio" name="q24" value="incorrect">a. Cecum, transverse colon, ascending colon, descending colon, sigmoid colon, rectum, anus    <br>
+                <input type="radio" name="q24" value="correct">b. Cecum, ascending colon, transverse colon, descending colon, sigmoid colon, rectum, anus  <br>
+				<input type="radio" name="q24" value="incorrect">c. Cecum, ascending colon, transverse colon, sigmoid colon, descending colon, rectum, anus  <br>
+				<input type="radio" name="q24" value="incorrect">d. Cecum, descending colon, transverse colon, ascending colon, sigmoid colon, rectum, anus <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 25: The splenic (left colic) flexure lies in the upper left quadrant, between what two portions of the large intestine?        </p>
+                
+                <input type="radio" name="q25" value="incorrect">a. The cecum and ascending colon   <br>
+                <input type="radio" name="q25" value="incorrect">b. The descending and sigmoid colon  <br>
+				<input type="radio" name="q25" value="correct">c. The transverse and descending colon <br>
+				<input type="radio" name="q25" value="incorrect">d. The ascending and transverse colon  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 26: In order, starting with the innermost layer, what are the four walls of the digestive tract?        </p>
+                
+                <input type="radio" name="q26" value="incorrect">a. Muscle, submucosa, mucosa, serosa   <br>
+                <input type="radio" name="q26" value="incorrect">b. Mucosa, submucosa, serosa, muscle   <br>
+				<input type="radio" name="q26" value="correct">c. Mucosa, submucosa, muscle, serosa <br>
+				<input type="radio" name="q26" value="incorrect">d.  Serosa, mucosa, submucosa, muscle   <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 27: Urine is transported from the kidneys to the urinary bladder by which structure?         </p>
+                
+                <input type="radio" name="q27" value="incorrect">a. Urethra  <br>
+                <input type="radio" name="q27" value="correct">b. Ureter  <br>
+				<input type="radio" name="q27" value="incorrect">c. Kidney pelvis <br>
+				<input type="radio" name="q27" value="incorrect">d.  Urinary vein  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 28: The loop of Henle is located in which structure?         </p>
+                
+                <input type="radio" name="q28" value="incorrect">a. Bladder   <br>
+                <input type="radio" name="q28" value="correct">b. Kidney  <br>
+				<input type="radio" name="q28" value="incorrect">c. Urethra  <br>
+				<input type="radio" name="q28" value="incorrect">d.  Prostate   <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 29: What is the Bowman’s capsule?          </p>
+                
+                <input type="radio" name="q29" value="incorrect">a. A basin collecting urine made by the kidneys    <br>
+                <input type="radio" name="q29" value="incorrect">b. Cup-like edges of the renal pelvis  <br>
+				<input type="radio" name="q29" value="correct">c. C-shaped structure partially surrounding the glomerulus  <br>
+				<input type="radio" name="q29" value="incorrect">d.  Peritubular capsules surrounding the renal tube    <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 30: The structure of the male anatomy carrying sperm out of the epididymis is called:           </p>
+                
+                <input type="radio" name="q30" value="correct">a. Vas deferens <br>
+                <input type="radio" name="q30" value="incorrect">b. Seminal vesicles  <br>
+				<input type="radio" name="q30" value="incorrect">c. Tunica vaginalis  <br>
+				<input type="radio" name="q30" value="incorrect">d.  Testicles   <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 31: What is the function of the Cowper’s glands?           </p>
+                
+                <input type="radio" name="q31" value="incorrect">a. Produces sperm food  <br>
+                <input type="radio" name="q31" value="incorrect">b. Delivers spermatozoa to the urethra  <br>
+				<input type="radio" name="q31" value="incorrect">c. Promotes maturation of the egg   <br>
+				<input type="radio" name="q31" value="correct">d.  Helps lubricate the urethra   <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 32: A part of the male genital system sitting below the urinary bladder and surrounding the urethra is called the:           </p>
+                
+                <input type="radio" name="q32" value="incorrect">a. Testis   <br>
+                <input type="radio" name="q32" value="incorrect">b. Scrotum  <br>
+				<input type="radio" name="q32" value="correct">c. Prostate  <br>
+				<input type="radio" name="q32" value="incorrect">d.  Epididymis    <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 33: What is endometriosis?           </p>
+                
+                <input type="radio" name="q33" value="incorrect">a. Inflammation of the endometrium    <br>
+                <input type="radio" name="q33" value="correct">b. When the endometrial tissue grows outside of the uterus   <br>
+				<input type="radio" name="q33" value="incorrect">c. When the endometrium sloughs during menses  <br>
+				<input type="radio" name="q33" value="incorrect">d.  Disintegration of the endometrium    <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 34: If a woman has a Pap smear performed by her gynecologist, what part of the female anatomy is involved?            </p>
+                
+                <input type="radio" name="q34" value="correct">a. Cervix  <br>
+                <input type="radio" name="q34" value="incorrect">b. Corpus uteri <br>
+				<input type="radio" name="q34" value="incorrect">c. Endometrium <br>
+				<input type="radio" name="q34" value="incorrect">d.  Fallopian tube  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 35: The corpus luteum secretes progesterone. What is an effect of this secretion?            </p>
+                
+                <input type="radio" name="q35" value="incorrect">a. Enlargement and development of the organs of the female reproductive system  <br>
+                <input type="radio" name="q35" value="incorrect">b. Deposition of fat beneath the skin   <br>
+				<input type="radio" name="q35" value="incorrect">c. Closure of the epiphyseal discs in long bones <br>
+				<input type="radio" name="q35" value="correct">d.  Thickens the endometrium for implantation and is necessary to sustain pregnancy <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 36: An ectopic pregnancy is a complication in which the fertilized ovum is implanted in any tissue other than the ____.           </p>
+                
+                <input type="radio" name="q36" value="incorrect">a. Ampulla  <br>
+                <input type="radio" name="q36" value="incorrect">b. Ovary  <br>
+				<input type="radio" name="q36" value="incorrect">c. Fimbria <br>
+				<input type="radio" name="q36" value="correct">d.  Uterine wall  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 37: What is vernix caseosa?            </p>
+                
+                <input type="radio" name="q37" value="incorrect">a. When the mother first feels the fetus move  <br>
+                <input type="radio" name="q37" value="incorrect">b. The fine, downy hair covering the fetus   <br>
+				<input type="radio" name="q37" value="correct">c. A white cheese like substance covering the fetus and newborn.  <br>
+				<input type="radio" name="q37" value="incorrect">d.  A spontaneous abortion  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 38: The term episiotomy is what type of procedure?             </p>
+                
+                <input type="radio" name="q38" value="correct">a. An incision made in the perineum to enlarge the passage for the fetus during delivery <br>
+                <input type="radio" name="q38" value="incorrect">b. A procedure to initiate cervical ripening prior to labor  <br>
+				<input type="radio" name="q38" value="incorrect">c. Surgical removal of an oviduct  <br>
+				<input type="radio" name="q38" value="incorrect">d.  Removal of lining from the cervix  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 39: Which gland is located on the superior surface of the kidney?             </p>
+                
+                <input type="radio" name="q39" value="incorrect">a. Pineal gland <br>
+                <input type="radio" name="q39" value="incorrect">b. Pituitary gland  <br>
+				<input type="radio" name="q39" value="incorrect">c. Parathyroid gland <br>
+				<input type="radio" name="q39" value="correct">d.  Adrenal gland  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 40: What is the function of the thyroid gland?             </p>
+                
+                <input type="radio" name="q40" value="correct">a. It secretes hormones regulating body metabolism and blood calcium <br>
+                <input type="radio" name="q40" value="incorrect">b. It secretes hormones regulating the secretion of insulin and hemoglobin  <br>
+				<input type="radio" name="q40" value="incorrect">c. It secretes hormones regulating mood and growth hormones  <br>
+				<input type="radio" name="q40" value="incorrect">d.  It secretes hormones regulating the immune system and blood calcium  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 41: Which cells produce hormones to regulate blood sugar?             </p>
+                
+                <input type="radio" name="q41" value="incorrect">a. Eosinophils <br>
+                <input type="radio" name="q41" value="correct">b. Pancreatic islets <br>
+				<input type="radio" name="q41" value="incorrect">c. Hemoglobin <br>
+				<input type="radio" name="q41" value="incorrect">d.  Target cells <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 42: Which part of the brain controls blood pressure, heart rate and respiration?              </p>
+                
+                <input type="radio" name="q42" value="incorrect">a. Cortex  <br>
+                <input type="radio" name="q42" value="incorrect">b. Cerebrum <br>
+				<input type="radio" name="q42" value="incorrect">c. Cerebellum  <br>
+				<input type="radio" name="q42" value="correct">d.  Medulla <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 43: What are chemicals which relay, amplify and modulate signals between a neuron and another cell?              </p>
+                
+                <input type="radio" name="q43" value="correct">a. Neurotransmitters  <br>
+                <input type="radio" name="q43" value="incorrect">b. Hormones <br>
+				<input type="radio" name="q43" value="incorrect">c. Interneurons   <br>
+				<input type="radio" name="q43" value="incorrect">d.  Myelin  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 44: Which condition results from an injury to the head? The symptoms include headache, dizziness and vomiting.              </p>
+                
+                <input type="radio" name="q44" value="incorrect">a. Meningitis   <br>
+                <input type="radio" name="q44" value="incorrect">b. Parkinson’s disease <br>
+				<input type="radio" name="q44" value="correct">c. Concussion   <br>
+				<input type="radio" name="q44" value="incorrect">d.  Epilepsy  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 45: Lacrimal glands are responsible for which of the following?              </p>
+                
+                <input type="radio" name="q45" value="correct">a. Production of tears    <br>
+                <input type="radio" name="q45" value="incorrect">b. Production of zonules <br>
+				<input type="radio" name="q45" value="incorrect">c. Production of vitreous  <br>
+				<input type="radio" name="q45" value="incorrect">d.  Production of mydriatic agents  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 46: Which does NOT contribute to refraction in the eye?               </p>
+                
+                <input type="radio" name="q46" value="incorrect">a. Aqueous    <br>
+                <input type="radio" name="q46" value="correct">b. Macula <br>
+				<input type="radio" name="q46" value="incorrect">c. Cornea  <br>
+				<input type="radio" name="q46" value="incorrect">d.  Lens <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 47: A patient diagnosed with glaucoma has:         </p>
+                
+                <input type="radio" name="q47" value="incorrect">a. A lens that is no longer clear     <br>
+                <input type="radio" name="q47" value="incorrect">b. Bleeding vessels on the retina <br>
+				<input type="radio" name="q47" value="correct">c. Abnormally high intraocular pressure   <br>
+				<input type="radio" name="q47" value="incorrect">d.  Corneal neovascularization <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 48: Which one of the following is TRUE about the tympanic membrane?          </p>
+                
+                <input type="radio" name="q48" value="incorrect">a. It separates the middle ear from the inner ear  <br>
+                <input type="radio" name="q48" value="correct">b. It separates the external ear from the middle ear  <br>
+				<input type="radio" name="q48" value="incorrect">c. It sits within the middle ear <br>
+				<input type="radio" name="q48" value="incorrect">d.  It sits within the inner ear  <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 49: Which one of the following is TRUE about the function of the cochlea?           </p>
+                
+                <input type="radio" name="q49" value="incorrect">a. It helps with balance and sound transmission <br>
+                <input type="radio" name="q49" value="incorrect">b. It helps with balance only   <br>
+				<input type="radio" name="q49" value="correct">c. It transmits sound only <br>
+				<input type="radio" name="q49" value="incorrect">d.  Its function is to excrete cerumen (wax) to help keep the ear clean   <br>
+            </div>
+			
+			<div class="question">
+				
+                <p>Pregunta 50: Which of the following are auditory ossicles?   </p>
+                
+                <input type="radio" name="q50" value="incorrect">a. Incus and pinna <br>
+                <input type="radio" name="q50" value="incorrect">b. Stapes and mastoid   <br>
+				<input type="radio" name="q50" value="incorrect">c. Tragus and malleus <br>
+				<input type="radio" name="q50" value="correct">d.  Stapes and incus  <br>
+            </div>
+			
+            <button type="button" onclick="evaluateQuiz()">Evaluar</button> <br>
+			<button type="button" onclick="highlightAndSelectCorrect()">Ver respuestas correctas</button>
+			
         </form>
+		<!-- Modal -->
+			<div id="resultModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border: 1px solid #ccc; padding: 20px; z-index: 1000;">
+				<p id="modalContent"></p>
+				<button onclick="closeModal()">Aceptar</button>
+			</div>
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
