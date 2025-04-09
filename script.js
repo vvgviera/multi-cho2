@@ -63,6 +63,8 @@ function highlightAndSelectCorrect() {
     });
 }
 
+highlightIncorrectAnswers();
+
 function highlightIncorrectAnswers() {
     const questions = document.querySelectorAll('.question');
     questions.forEach(question => {
@@ -81,8 +83,8 @@ function highlightIncorrectAnswers() {
 }
 
 // Llama a la función después de evaluar el cuestionario
-evaluateQuiz();
-highlightIncorrectAnswers();
+//evaluateQuiz();
+
 
 // Llama a la función cuando sea necesario:
 //highlightAndSelectCorrect(); // Ejecutará los cambios al invocarla
