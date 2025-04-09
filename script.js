@@ -61,6 +61,8 @@ function highlightAndSelectCorrect() {
 			return
         }
     });
+	
+function highlightIncorrectAnswers()	
 }
 
 highlightIncorrectAnswers();
