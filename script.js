@@ -88,7 +88,7 @@ function highlightAndSelectCorrect() {
 	
 }
 
-highlightIncorrectAnswers();
+
 
 
 // Llama a la función después de evaluar el cuestionario
