@@ -47,6 +47,9 @@ function closeModal() {
 }
 
 function highlightAndSelectCorrect() {
+
+	function highlightIncorrectAnswers()
+	
     // Selecciona todas las casillas de verificación tipo radio
     const radioButtons = document.querySelectorAll('input[type="radio"]');
     
@@ -62,7 +65,7 @@ function highlightAndSelectCorrect() {
         }
     });
 	
-function highlightIncorrectAnswers()	
+	
 }
 
 highlightIncorrectAnswers();
