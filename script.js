@@ -46,29 +46,9 @@ function closeModal() {
     document.getElementById('quizForm').focus();
 }
 
-function highlightIncorrectAnswers() {
-    const questions = document.querySelectorAll('.question'); // Selecciona todas las preguntas
-    questions.forEach(question => {
-        const selectedOption = question.querySelector('input[type="radio"]:checked'); // Busca la opción seleccionada
-        const paragraph = question.querySelector('p'); // Asume que el texto de la pregunta está dentro de un párrafo
-        
-        if (selectedOption && selectedOption.value !== 'correct') {
-            // Subrayar y cambiar color para respuestas incorrectas
-            paragraph.style.textDecoration = 'underline';
-            paragraph.style.color = 'red';
-        } else if (paragraph) {
-            // Restaurar estilo para preguntas correctas o no seleccionadas
-            paragraph.style.textDecoration = 'none';
-            paragraph.style.color = 'black'; // Color original
-        }
-    });
-}
 
 
-
-function highlightAndSelectCorrect() {
-
-	function highlightIncorrectAnswers()
+function highlightAndSelectCorrect() {	
 	
     // Selecciona todas las casillas de verificación tipo radio
     const radioButtons = document.querySelectorAll('input[type="radio"]');
@@ -84,7 +64,6 @@ function highlightAndSelectCorrect() {
 			return
         }
     });
-	
 	
 }
 
