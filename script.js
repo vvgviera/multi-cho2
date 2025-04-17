@@ -106,6 +106,9 @@ function limpiarRadios() {
             
             // Recorremos y desmarcamos cada radio
             radios.forEach(radio => radio.checked = false);
+
+	// Volver al inicio de la página
+            window.scrollTo(0, 0);
         }
 
 
