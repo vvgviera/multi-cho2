@@ -98,6 +98,14 @@ localStorage.setItem('visitCount', visitCount);
 // Mostrar el contador en la página
 visitCountElement.textContent = visitCount;
 
+//Limpia los radio buttons
 
+function limpiarRadios() {
+            // Obtenemos todos los elementos tipo radio del formulario
+            const radios = document.querySelectorAll('input[type="radio"]');
+            
+            // Recorremos y desmarcamos cada radio
+            radios.forEach(radio => radio.checked = false);
+        }
 
 
