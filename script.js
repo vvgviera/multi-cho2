@@ -11,11 +11,18 @@ function evaluateQuiz() {
     const form = document.getElementById('quizForm');
     const questions = form.querySelectorAll('.question');
     let correctAnswers = 0;
+    let incorrectQuestions = [];
 
-    questions.forEach(question => {
+    questions.forEach((question, index) => {
         const selectedOption = question.querySelector('input[type="radio"]:checked');
-        if (selectedOption && selectedOption.value === 'correct') {
-            correctAnswers++;
+        if (selectedOption) {
+            if (selectedOption.value === 'correct') {
+                correctAnswers++;
+            } else {
+                incorrectQuestions.push(`Pregunta ${index + 1}`);
+            }
+        } else {
+            incorrectQuestions.push(`Pregunta ${index + 1}`);
         }
     });
 
@@ -25,15 +32,19 @@ function evaluateQuiz() {
     const resultModal = document.getElementById('resultModal');
     const overlay = document.getElementById('overlay');
 
-    if (scorePercentage >= 70) {
-        modalContent.innerHTML = `<p>Aprobado - ${scorePercentage.toFixed(2)}%</p>`;
-    } else {
-        modalContent.innerHTML = `<p>Desaprobado - ${scorePercentage.toFixed(2)}%</p>`;
+    let resultMessage = scorePercentage >= 70 
+        ? `<p>Aprobado - ${scorePercentage.toFixed(2)}%</p>` 
+        : `<p>Desaprobado - ${scorePercentage.toFixed(2)}%</p>`;
+
+    if (incorrectQuestions.length > 0) {
+        resultMessage += `<p>Preguntas incorrectas: ${incorrectQuestions.join(', ')}</p>`;
     }
 
+    modalContent.innerHTML = resultMessage;
     resultModal.style.display = 'block';
     overlay.style.display = 'block';
 }
+
 
 function closeModal() {
     const resultModal = document.getElementById('resultModal');
