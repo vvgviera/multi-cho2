@@ -19,10 +19,12 @@ function evaluateQuiz() {
             if (selectedOption.value === 'correct') {
                 correctAnswers++;
             } else {
-                incorrectQuestions.push(`Pregunta ${index + 1}`);
+                incorrectQuestions.push(index + 1);
+
             }
         } else {
-            incorrectQuestions.push(`Pregunta ${index + 1}`);
+            incorrectQuestions.push(index + 1);
+
         }
     });
 
