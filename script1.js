@@ -2333,4 +2333,14 @@ closeModal.addEventListener("click", () => {
     resultModal.style.display = "none";
 });
 
+function limpiarRadios() {
+            // Obtenemos todos los elementos tipo radio del formulario
+            const radios = document.querySelectorAll('input[type="radio"]');
+            
+            // Recorremos y desmarcamos cada radio
+            radios.forEach(radio => radio.checked = false);
+	
+	// Volver al inicio de la página
+            window.scrollTo(0, 0);
+        }
 
