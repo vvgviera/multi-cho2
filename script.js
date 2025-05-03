@@ -2,6 +2,7 @@
 function cambiarContenido(pagina) {
   const contenidoDiv = document.getElementById('contenido');
   contenidoDiv.innerHTML = `<iframe src="${pagina}" frameborder="0" style="width: 100%; height: 100vh;"></iframe>`;
+	window.scrollTo(0, 0);
 }
 
 
